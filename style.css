@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+
+/* ------------------Banner --------------- */
+
+
+.banner {
+    display: inline-block;
+    width: 100%;
+
+}
+
+.banner-container .banner {
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    position: inline-block;
+    background-image: url(image/4IR\ Web\ Cover.jpg);
+    background-size: cover;
+    /* background: linear-gradient(-55deg,#17a2b8 29%,#28a745 29.1% ,#28a748 68% , #17a2b8 68.1%); */
+    border-radius: 5px;
+    width: 100%;
+    height: 250px;
+    /* margin:0 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 10px #005;
+    /* overflow: hidden; */
+}
+
+
+/* ------------------P Tag ----------------------- */
+
+.content p {
+    font-size: 30px;
+    color: #088d1a;
+    font-weight: bold;
+
+}
+
+.text-content #pid span {
+    font-weight: bold;
+
+}
+
+
+.text-content .pclass {
+    font-weight: bold;
+}
+
+.text-content hr {
+    margin: 40px 0 20px 0;
+    font-weight: bold;
+    border: 0; /* Remove default border */
+    border-top: 2px solid black;
+}
+
+.text-content #italic {
+    font-style: italic;
+}
+
+ol li span {
+    font-weight: bold;
+}
+
+
+/* ------------------Text--------------------- */
+
+
+.main_title {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-content h3 {
+    font-weight: bold;
+}
+
+.text-content p .pid {
+    font-weight: bold;
+}
+
+
+/* ------------------------Ul/Li------------------------ */
+
+.custom-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0; /* Remove left padding */
+}
+
+.custom-list li {
+    position: relative; /* Enable positioning for the dot */
+    padding-left: 20px; /* Space between dot and text */
+}
+
+.custom-list li:before {
+    content: '•'; /* Use dot character */
+    position: absolute; /* Position the dot */
+    left: 0; /* Align dot to the left */
+    color: black;
+}
+
+
+/* ------------------Form -------------------------------- */
+
+.form {
+    border: 1px solid #9999;
+    padding: 40px 40px;
+    border-radius: 5px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.01);
+    box-shadow: inset -5px -5px rgba(0,0,0,.5);
+}
+
+
+.row2 {
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+/* ---------------Input type: Number------------- */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Removes the default appearance of spin buttons */
+    margin: 0; /* Removes any margin around the buttons */
+}
+
+
+/* -----------------dropdown------------------------- */
+
+.dropdown .btnn {
+    width: 80%;
+    /* margin:20px 140px; */
+    flex-wrap: wrap;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #9999;
+
+    color: #8d8b8b;
+    border: 1px solid #d3d3d3;
+    /* width: 75%; */
+    text-align: left;
+
+}
+
+.dropdown-toggle {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.form .button {
+    color: #ffff;
+    background-color:  hsl(180, 100%, 18%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.form .button:hover {
+    border: 1px solid black;
+    background-color: #ffff;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+/* ------------------footer ------------------- */
+
+.footer-foot {
+    margin-top: 100px;
+    /* height: 200px; */
+    /* width: 100%; */
+    /* border: 1px solid #9999; */
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+.flex-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.footer-full-space {
+    width: 100%;
+    background-color: hsl(180, 100%, 18%); 
+}
+
+.padding {
+    padding: 0 10px
+}
+
+
+#spanid {
+    font-weight: bold;
+}
+
+
+.fixed-menu {
+    list-style-type: none; /* Remove default list bullets */
+
+    /* Set the width of the sidebar */
+}
+
+.vertical-list {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.vertical-list .li-li {
+    list-style-type: none;
+    padding: 10px 5px;
+
+    margin: 0 10px; /* Add horizontal space between items */
+    border-radius: 5px;
+}
+
+.li-li a {
+    color: #ffff;
+}
+
+
+.toggle-button {
+    cursor: pointer;
+    color: blue;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.toggle-button.collapsed::after {
+    content: 'Show More';
+}
+
+.toggle-button:not(.collapsed)::after {
+    content: 'Show Less';
+}
+
+.load_more_content {
+    display: none;
+    background-color: #0a4275;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #ffff;
+    cursor: pointer;
+
+}
+
+/* .span-more{
+      display: flex;
+} */
+
+
+.hidden {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .load_more_content {
+        display: inline-block;
+    }
+
+    .load_for_mobile_device {
+        display: none;
+    }
+
+    .form {
+        margin-top: 30px;
+    }
+}
