@@ -31,7 +31,7 @@ body {
     /* background: linear-gradient(-55deg,#17a2b8 29%,#28a745 29.1% ,#28a748 68% , #17a2b8 68.1%); */
     border-radius: 5px;
     width: 100%;
-    height: 250px;
+    height: 350px;
     /* margin:0 100px; */
     display: flex;
     align-items: center;
@@ -60,6 +60,28 @@ body {
 .text-content .pclass {
     font-weight: bold;
 }
+.text-content #p-id{
+    font-size: 18px;
+}
+.text-content #specialization-heading{
+    font-size: 18px;
+}
+.text-content #locations{
+    font-size: 18px;
+}
+.text-content #key{
+    font-size: 18px;
+}
+.text-content #who{
+    font-size: 18px;
+}
+.text-content #eligibility{
+    font-size: 18px;
+}
+.text-content #how{
+    font-size: 18px;
+}
+
 
 .text-content hr {
     margin: 40px 0 20px 0;
@@ -266,7 +288,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .load_more_content {
     display: none;
-    background-color: #0a4275;
+    background-color:  hsl(180, 100%, 18%);
     padding: 10px 20px;
     border-radius: 5px;
     color: #ffff;
