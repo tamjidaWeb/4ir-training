@@ -23,7 +23,12 @@
             <div class="row">
                 <div class="col-12">
                     <div class="banner-container mb-5">
-                        <div class="banner"></div>
+                        <div class="banner">
+                            <img
+                                src="image/Web Cover.PNG"
+                                alt="Vendor Certification Training Banner"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -457,46 +462,12 @@
                                 </div>
                             </div>
 
-
-
-
-
-
                             <!-- ---------------yes /no ---------------- -->
 
-
-
-
-                            <div class="form-group check-gender mb-3 " id="myForm">
-                                <span class="lebel-text"> Currently Employed (Yes / No)</span>
-                                <div class="custom-radio">
-                                    <input type="radio" name="employment" value="yes" class="custom-control-input" id="yes"  onclick="toggleFields()">
-                                    <label class="custom-control-label" for="yes">Yes</label>
-                                </div>
-                                <div class="custom-radio">
-                                    <input type="radio" name="employment" value="no" class="custom-control-input" id="no"onclick="toggleFields()">
-                                    <label class="custom-control-label" for="no">No</label>
-                                </div>
-    
-                            </div>
-    
-    
-                          <div class="hidden" id="employmentFields">
-                            <div class="mb-3">
-                               
-                              <label class="input-label" for="companyName">Current Company Name</label>
-                              <input type="text" class="form-control" name="name" id="companyName" placeholder="Current Company Name">
-                          </div>
-                          <div class="mb-3">
-                              <label class="input-label" for="jobDesignation">Current Job Designation / Responsibilities</label>
-                              <input type="text" class="form-control" name="name" id="jobDesignation" placeholder="Designation">
-                          </div>
-                          </div>
-    
-
-                            <!-- ---------- Currently Employed  Yes/No ---------- -->
-
-                            <!-- <div class="form-group check-gender mb-3">
+                            <div
+                                class="form-group check-gender mb-3"
+                                id="myForm"
+                            >
                                 <span class="lebel-text">
                                     Currently Employed (Yes / No)</span
                                 >
@@ -504,7 +475,7 @@
                                     <input
                                         type="radio"
                                         name="employment"
-                                        value="Yes"
+                                        value="yes"
                                         class="custom-control-input"
                                         id="yes"
                                         onclick="toggleFields()"
@@ -519,7 +490,7 @@
                                     <input
                                         type="radio"
                                         name="employment"
-                                        value="No"
+                                        value="no"
                                         class="custom-control-input"
                                         id="no"
                                         onclick="toggleFields()"
@@ -538,7 +509,7 @@
                                     <input
                                         type="text"
                                         class="form-control"
-                                        name="companyName"
+                                        name="name"
                                         id="companyName"
                                         placeholder="Current Company Name"
                                     />
@@ -553,42 +524,15 @@
                                     <input
                                         type="text"
                                         class="form-control"
-                                        name="jobDesignation"
+                                        name="name"
                                         id="jobDesignation"
                                         placeholder="Designation"
                                     />
                                 </div>
-                            </div> -->
+                            </div>
 
-                            <!-- <label class="input-label" for="trainingLocation">Select Training Location</label>
-                        <select id="trainingLocation" name="trainingLocation" class="form-select mb-3" aria-label="Default select example">
-                            <option selected disabled value="">Locations</option>
-                            <option value="Dhaka">Dhaka</option>
-                            <option value="Chattogram">Chattogram</option>
-                            <option value="Sylhet">Sylhet</option>
-                            <option value="Khulna">Khulna</option>
-                            <option value="Barisal">Barisal</option>
-                            <option value="Mymensingh">Mymensingh</option>
-                            <option value="Rajshahi">Rajshahi</option>
-                        </select>
-
-                        <label class="input-label" for="trainingCourse">Select Training Course</label>
-                        <select id="trainingCourse" name="trainingCourse" class="form-select mb-3" aria-label="Default select example">
-                            <option selected disabled value="">Courses</option>
-                            <option value="Data Analytics">Data Analytics</option>
-                            <option value="Power BI Data Analyst">Power BI Data Analyst</option>
-                            <option value="Artificial Intelligence Professional">Artificial Intelligence Professional</option>
-                            <option value="Artificial Intelligence Expert">Artificial Intelligence Expert</option>
-                            <option value="Machine Learning Professional">Machine Learning Professional</option>
-                            <option value="Automation 360 Professional">Automation 360 Professional</option>
-                            <option value="Automation 360 Master">Automation 360 Master</option>
-                            <option value="Robotic Process Automation Associate">Robotic Process Automation Associate</option>
-                            <option value="Robotic Process Automation Developer">Robotic Process Automation Developer</option>
-                            <option value="Information Systems Security">Information Systems Security</option>
-                            <option value="Governance of Enterprise IT">Governance of Enterprise IT</option>
-                            <option value="Embedded Systems Schematic & Circuit Design">Embedded Systems Schematic & Circuit Design</option>
-                            <option value="Microcontroller Embedded C Programming">Microcontroller Embedded C Programming</option>
-                        </select> -->
+                           
+                          
 
                             <label class="input-label" for="location"
                                 >Select Training Location</label
@@ -656,8 +600,9 @@
                                 <option value="13">
                                     Microcontroller Embedded C Programming
                                 </option>
-                                <option  value="14">
-                                    There are no courses available in your location!!
+                                <option value="14">
+                                    There are no courses available in your
+                                    location!!
                                 </option>
                             </select>
 
@@ -739,15 +684,16 @@
                     <!-- Grid container -->
                     <div class="container p-4 pb-0">
                         <!-- Section: CTA -->
-                        <section class="">
-                            <p
-                                class="d-flex justify-content-center align-items-center"
-                            ></p>
-                            <div class="flex-flex">
-                                <span id="spanid" class="mb-4"
-                                    >Learn More...</span
-                                >
-                                <section class="">
+                        
+                           
+                            <div class="row">
+                               
+                                    <div class="col-6" id="spanid">
+                                
+                                   <p> Learn More...</p>
+                                    </div>
+
+                                 <div class="col-6">
                                     <ul class="vertical-list mb-4">
                                         <li class="li-li">
                                             <a href="https://www.facebook.com/">
@@ -859,9 +805,9 @@
                                             </a>
                                         </li>
                                     </ul>
-                                </section>
+                                </div>
                             </div>
-                        </section>
+                       
                         <!-- Section: CTA -->
                     </div>
                     <!-- Grid container -->
