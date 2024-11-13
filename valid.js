@@ -49,7 +49,7 @@ document
             errorMessageElement.innerHTML = errorMessage;
         } else {
             errorMessageElement.innerHTML = "";
-            //alert('Form submitted successfully!'); // Or handle successful form submission
+            alert('Form submitted successfully!'); // Or handle successful form submission
             // You can add your form submission logic here
 
             // submit the form
