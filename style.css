@@ -125,7 +125,6 @@ ol li span {
 .form {
     border: 1px solid #9999;
     padding: 40px 40px;
-    border-radius: 5px;
     border-radius: 25px;
     background-color: rgba(0, 0, 0, 0.01);
     box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);

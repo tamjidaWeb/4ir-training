@@ -49,7 +49,7 @@ document
             errorMessageElement.innerHTML = errorMessage;
         } else {
             errorMessageElement.innerHTML = "";
-            alert('Form submitted successfully!'); // Or handle successful form submission
+            //alert('Form submitted successfully!'); // Or handle successful form submission
             // You can add your form submission logic here
 
             // submit the form
@@ -137,52 +137,29 @@ function updateCourses() {
     let courses = [];
     if (location === "dhaka") {
         courses = [
-            {
-                value: "12",
-                text: "Embedded Systems Schematic & Circuit Design",
-            },
-            { value: "13", text: "Microcontroller Embedded C Programming" },
-            { value: "7", text: "Automation 360 Master" },
-            { value: "9", text: "Robotic process automation Develope" },
+            {value: "Embedded Systems Schematic & Circuit Design", text: "Embedded Systems Schematic & Circuit Design",},
+            {value: "Microcontroller Embedded C Programming", text: "Microcontroller Embedded C Programming"},
+            {value: "Automation 360 Master", text: "Automation 360 Master"},
+            {value: "Robotic process automation Developer", text: "Robotic process automation Developer"},
 
         ];
-    }
-    else if (location === "khulna") {
+    } else if (location === "khulna") {
         courses = [
-            {
-                value: "5",
-                text: "Machine Learning Professional",
-            },
-
+            {value: "Machine Learning Professional", text: "Machine Learning Professional",},
         ];
-    }
-    else if (location === "sylhet") {
+    } else if (location === "sylhet") {
         courses = [
-            {
-                value: "6",
-                text: "Automation 360 Professional",
-            },
-
+            {value: "Automation 360 Professional", text: "Automation 360 Professional",},
         ];
-    }
-    else if(location === "rajshahi") {
+    } else if (location === "rajshahi") {
         courses = [
-            {
-                value: "8",
-                text: "Robotic process automation Associate",
-            },
-
+            {value: "Robotic process automation Associate", text: "Robotic process automation Associate",},
         ];
-    }
-    else {
+    } else {
         courses = [
-            {
-                value: "14",
-                text: "There are no courses available in your location!!",
-            },
-
+            {value: "0", text: "There are no courses available in your location!!",},
         ];
-        
+
     }
 
     // Add courses to the select element
