@@ -25,19 +25,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nid_no = trim($_POST['nid_no'] ?? '');
     $address = trim($_POST['address'] ?? '');
     $gender = trim($_POST['gender'] ?? '');
-
     $degree = trim($_POST['degree'] ?? '');
     $institute = trim($_POST['institute'] ?? '');
     $employment_status = trim($_POST['employment'] ?? '');
     $company_name = trim($_POST['current_company_name'] ?? '');
     $job_designation = trim($_POST['job_designation'] ?? '');
-
     $training_location = trim($_POST['training_location'] ?? '');
     $training_course = trim($_POST['training_course'] ?? '');
+    $training_phase = trim($_POST['training_phase'] ?? '');
+    $are_you = trim($_POST['are_you'] ?? ''); // Capture the "are_you" field
 
-    // Basic Validation
-    if (empty($name) || empty($email) || empty($nid_no) || empty($contact_no)) {
-        $_SESSION['error_message'] = "Name, Email, Phone Number, and NID Number are required.";
+    // Initialize an array to hold missing fields
+    $missing_fields = [];
+
+    // Check required fields
+    if (empty($name)) $missing_fields[] = "Name";
+    if (empty($email)) $missing_fields[] = "Email";
+    if (empty($contact_no)) $missing_fields[] = "Contact Number";
+    if (empty($nid_no)) $missing_fields[] = "NID Number";
+    if (empty($gender)) $missing_fields[] = "Gender";
+    if (empty($degree)) $missing_fields[] = "Degree";
+    if (empty($institute)) $missing_fields[] = "Institute";
+    if (empty($employment_status)) $missing_fields[] = "Employment Status";
+    if (empty($training_phase)) $missing_fields[] = "Training Phase";
+    if (empty($training_location)) $missing_fields[] = "Training Location";
+    if (empty($training_course)) $missing_fields[] = "Training Course";
+    if (empty($are_you)) $missing_fields[] = "Are You";
+
+    // If there are missing fields, generate an error message
+    if (count($missing_fields) > 0) {
+        $_SESSION['error_message'] = "The following fields are required: " . implode(", ", $missing_fields);
         header("Location: index.php");
         exit();
     }
@@ -118,6 +135,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
+    // **Certificate is required**
+    if (empty($_FILES['certificate']['name'])) {
+        $_SESSION['error_message'] = "Certificate is required.";
+        header("Location: index.php");
+        exit();
+    }
+
     if (!empty($_FILES['certificate']['name'])) {
         $certificate_tmp = $_FILES['certificate']['tmp_name'];
         $certificate_name = basename($_FILES['certificate']['name']);
@@ -136,8 +160,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Insert data into the database
     try {
         $sql = "INSERT INTO applicant_4ir 
-                (name, email, contact_no, nid_no, address, gender, degree, institute, employment_status, company_name, job_designation, training_location, training_course, resume_path, nid_path, certificate_path, terms_accepted)
-                VALUES (:name, :email, :contact_no, :nid_no, :address, :gender, :degree, :institute, :employment_status, :company_name, :job_designation, :training_location, :training_course, :resume_path, :nid_path, :certificate_path, :terms_accepted)";
+                (name, email, contact_no, nid_no, address, gender, degree, institute, employment_status, company_name, job_designation, training_location, training_course, training_phase, are_you, resume_path, nid_path, certificate_path, terms_accepted)
+                VALUES (:name, :email, :contact_no, :nid_no, :address, :gender, :degree, :institute, :employment_status, :company_name, :job_designation, :training_location, :training_course, :training_phase, :are_you, :resume_path, :nid_path, :certificate_path, :terms_accepted)";
 
         $stmt = $conn->prepare($sql);
         $stmt->execute([
@@ -154,6 +178,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             ':job_designation' => $job_designation,
             ':training_location' => $training_location,
             ':training_course' => $training_course,
+            ':training_phase' => $training_phase,
+            ':are_you' => $are_you, // Insert the selected value of "are_you"
             ':resume_path' => $resume_path,
             ':nid_path' => $nid_path,
             ':certificate_path' => $certificate_path,

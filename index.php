@@ -24,7 +24,6 @@ session_start();
     <div class="container">
         <!--------------------- Banner section started------------------ -->
 
-
         <!-- Success Message -->
         <?php if (isset($_SESSION['success_message'])): ?>
             <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -67,8 +66,7 @@ session_start();
             <div class="col-lg-7 col-sm-12">
                 <div class="text-content">
                     <p id="pid">
-                        <span>Bangladesh Hi-Tech Park Authority(BHTPA),</span>
-                        under the
+                        <span>Bangladesh Hi-Tech Park Authority(BHTPA),</span>under the
                         <span>Digital Entrepreneurship and Innovation
                                 Eco-System Development Project (DEIEDP)</span>, is thrilled to announce a transformative training program on
                         <span>4IR (Fourth Industrial Revolution)Technologies.</span>
@@ -147,6 +145,52 @@ session_start();
 
                         <hr/>
 
+                        <div class="container mt-5">
+                            <!-- Tabs Navigation -->
+                            <ul class="nav nav-tabs" id="phaseTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="phase1-tab" data-bs-toggle="tab" href="#phase1" role="tab" aria-controls="phase1" aria-selected="true">Phase
+                                        1</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="phase2-tab" data-bs-toggle="tab" href="#phase2" role="tab" aria-controls="phase2" aria-selected="false">Phase 2</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="phase3-tab" data-bs-toggle="tab" href="#phase3" role="tab" aria-controls="phase3" aria-selected="false">Phase 3</a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab Content -->
+                            <div class="tab-content mt-3" id="phaseTabContent">
+                                <!-- Phase 1 -->
+                                <div class="tab-pane fade show active" id="phase1" role="tabpanel" aria-labelledby="phase1-tab">
+                                    <div class="row">
+                                        <div class="col-12 col-md-12">
+                                            <img src="image/2.png" alt="Phase 1 Image" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Phase 2 -->
+                                <div class="tab-pane fade" id="phase2" role="tabpanel" aria-labelledby="phase2-tab">
+                                    <div class="row">
+                                        <div class="col-12 col-md-12">
+                                            <img src="image/3.png" alt="Phase 2 Image" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Phase 3 -->
+                                <div class="tab-pane fade" id="phase3" role="tabpanel" aria-labelledby="phase3-tab">
+                                    <div class="row">
+                                        <div class="col-12 col-md-12">
+                                            <img src="image/4.png" alt="Phase 3 Image" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr/>
+
                         <p class="pclass" id="locations">Locations:</p>
 
                         <p>
@@ -180,6 +224,12 @@ session_start();
                                 Training costs are largely covered by
                                 DEIEDP-BHTPA, with participants only
                                 required to contribute 5%.
+                            </li>
+
+                            <li>
+                                <span class="pclass">Vendor Professional Certification:</span>
+                                Achieving vendor certifications enhances credibility, provides a competitive edge in the job market, and ensures alignment with the latest industry
+                                tools and technologies
                             </li>
 
                             <li>
@@ -256,6 +306,16 @@ session_start();
                                 inclusive tech industry.
                             </li>
                         </ul>
+
+                        <hr/>
+
+                        <p class="pclass" id="how">Security Money Policy</p>
+                        <p>
+                            To ensure commitment and accountability, <b>10% of the certification cost will be charged as security money</b> from trainees at the start of the
+                            program. This
+                            amount will be <b>refunded after successful completion of the training and receiving the certification</b>. This policy is designed to encourage full
+                            participation and successful outcomes for all trainees.
+                        </p>
 
                         <hr/>
 
@@ -400,6 +460,7 @@ session_start();
                                         required
                                 />
                             </div>
+
                             <div class="mb-3">
                                 <label for="institute" class="input-label">
                                     <span>*</span>Institute</label
@@ -412,6 +473,67 @@ session_start();
                                         placeholder="e.g. Oxford University"
                                         required
                                 />
+                            </div>
+
+                            <div class="input-type-block mb-3">
+                                <h6>
+                                    <span class="lebel-text"><span>*</span>Are You</span>
+                                </h6>
+
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input
+                                                type="radio"
+                                                name="are_you"
+                                                class="form-check-input"
+                                                id="freshGraduate"
+                                                value="Fresh Graduate"
+                                                required
+                                        />
+                                        <label for="freshGraduate" class="form-check-label">
+                                            Fresh Graduate
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input
+                                                type="radio"
+                                                name="are_you"
+                                                class="form-check-input"
+                                                id="unemployedGraduate"
+                                                value="Unemployed Graduate"
+                                                required
+                                        />
+                                        <label for="unemployedGraduate" class="form-check-label">
+                                            Unemployed Graduate
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input
+                                                type="radio"
+                                                name="are_you"
+                                                class="form-check-input"
+                                                id="employedGraduate"
+                                                value="Employed Graduate"
+                                                required
+                                        />
+                                        <label for="employedGraduate" class="form-check-label">
+                                            Employed Graduate
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input
+                                                type="radio"
+                                                name="are_you"
+                                                class="form-check-input"
+                                                id="freelancer"
+                                                value="Freelancer"
+                                                required
+                                        />
+                                        <label for="freelancer" class="form-check-label">
+                                            Freelancer
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -464,14 +586,17 @@ session_start();
                             </div>
                         </div>
 
+                        <label class="input-label" for="location">*Select Phase</label>
+                        <select id="phase" required name="training_phase" onchange="updatePhase()" class="form-select mb-3" aria-label="Default select example">
+                            <option selected disabled value="">--Select--</option>
+                            <option value="Phase 1">Phase 1 (7th Dec'24 – 16th Mar'25)</option>
+                            <option value="Phase 2">Phase 2 (12th April'25 – 20th Jul'25)</option>
+                            <option value="Phase 3">Phase 3 (1st Aug'25 – 2 nd Nov'25)</option>
+                        </select>
 
                         <label class="input-label" for="location">*Select Training Location</label>
                         <select id="location" required name="training_location" onchange="updateCourses()" class="form-select mb-3" aria-label="Default select example">
                             <option selected disabled value="">Locations</option>
-                            <option value="dhaka">Dhaka</option>
-                            <option value="sylhet">Sylhet</option>
-                            <option value="khulna">Khulna</option>
-                            <option value="rajshahi">Rajshahi</option>
                         </select>
 
                         <label class="input-label" for="course">*Select Training Course</label>
@@ -513,13 +638,14 @@ session_start();
                             <div class="form-group">
                                 <div class="custom-file">
                                     <p class="input-label">
-                                        Upload Educational Certificate
+                                        *Upload Last Education Certificate
                                     </p>
                                     <input
                                             type="file"
                                             name="certificate"
                                             class="custom-file-input form-control"
                                             id="validatedCustomFile3"
+                                            required
                                     />
 
                                     <label class="custom-file-label" for="validatedCustomFile3"><span class="file-return"></span></label>

@@ -126,40 +126,112 @@ function toggleFields() {
 //     });
 // }
 
+
+function updatePhase() {
+    const phaseSelect = document.getElementById("phase"); // Phase dropdown
+    const locationSelect = document.getElementById("location"); // Location dropdown
+
+    // Clear existing options in the location dropdown
+    locationSelect.innerHTML = '<option selected disabled value="">Locations</option>';
+
+    // Phase data with locations and timelines
+    const phaseData = {
+        "Phase 1": [
+            {value: "dhaka", text: "Dhaka"},
+            {value: "khulna", text: "Khulna"},
+            {value: "sylhet", text: "Sylhet"},
+            {value: "rajshahi", text: "Rajshahi"},
+        ],
+        "Phase 2": [
+            {value: "dhaka", text: "Dhaka"},
+        ],
+        "Phase 3": [
+            {value: "dhaka", text: "Dhaka"},
+            {value: "chattogram", text: "Chattogram"},
+        ],
+    };
+
+    // Get the selected phase
+    const selectedPhase = phaseSelect.value;
+
+    // Check if the selected phase exists in phaseData
+    if (phaseData[selectedPhase]) {
+        // Populate the location dropdown with options from the selected phase
+        phaseData[selectedPhase].forEach((location) => {
+            const option = document.createElement("option");
+            option.value = location.value;
+            option.textContent = location.text;
+            locationSelect.appendChild(option);
+        });
+    }
+}
+
+
 function updateCourses() {
-    const location = document.getElementById("location").value;
+    const location = document.getElementById("location").value; // Location selected
+    const phase = document.getElementById("phase").value; // Phase selected
     const courseSelect = document.getElementById("course");
 
-    // Clear existing options
+    // Clear existing options in the course dropdown
     courseSelect.innerHTML = '<option value="">Courses</option>';
 
-    // Define courses based on location
+    // Define courses based on phase and location
     let courses = [];
-    if (location === "dhaka") {
-        courses = [
-            {value: "Embedded Systems Schematic & Circuit Design", text: "Embedded Systems Schematic & Circuit Design",},
-            {value: "Microcontroller Embedded C Programming", text: "Microcontroller Embedded C Programming"},
-            {value: "Automation 360 Master", text: "Automation 360 Master"},
-            {value: "Robotic process automation Developer", text: "Robotic process automation Developer"},
 
-        ];
-    } else if (location === "khulna") {
-        courses = [
-            {value: "Machine Learning Professional", text: "Machine Learning Professional",},
-        ];
-    } else if (location === "sylhet") {
-        courses = [
-            {value: "Automation 360 Professional", text: "Automation 360 Professional",},
-        ];
-    } else if (location === "rajshahi") {
-        courses = [
-            {value: "Robotic process automation Associate", text: "Robotic process automation Associate",},
-        ];
-    } else {
-        courses = [
-            {value: "0", text: "There are no courses available in your location!!",},
-        ];
+    // Phase 1 Courses
+    if (phase === "Phase 1") {
+        if (location === "dhaka") {
+            courses = [
+                {value: "Embedded Systems Schematic & Circuit Design", text: "Embedded Systems Schematic & Circuit Design"},
+                {value: "Microcontroller Embedded C Programming", text: "Microcontroller Embedded C Programming"},
+                {value: "Automation 360 Master", text: "Automation 360 Master"},
+                {value: "Robotic Process Automation Developer", text: "Robotic Process Automation Developer"}
+            ];
+        } else if (location === "khulna") {
+            courses = [
+                {value: "Machine Learning Professional", text: "Machine Learning Professional"}
+            ];
+        } else if (location === "sylhet") {
+            courses = [
+                {value: "Automation 360 Professional", text: "Automation 360 Professional"}
+            ];
+        } else if (location === "rajshahi") {
+            courses = [
+                {value: "Robotic Process Automation Associate", text: "Robotic Process Automation Associate"}
+            ];
+        }
+    }
+    // Phase 2 Courses
+    else if (phase === "Phase 2") {
+        if (location === "dhaka") {
+            courses = [
+                {value: "Data Analytics", text: "Data Analytics"},
+                {value: "Power BI Data Analyst", text: "Power BI Data Analyst"},
+                {value: "Artificial Intelligence Professional", text: "Artificial Intelligence Professional"},
+                {value: "Artificial Intelligence Expert", text: "Artificial Intelligence Expert"}
+            ];
+        }
+    }
+    // Phase 3 Courses
+    else if (phase === "Phase 3") {
+        if (location === "dhaka") {
+            courses = [
+                {value: "Machine Learning Professional", text: "Machine Learning Professional"},
+                {value: "Information Systems Security", text: "Information Systems Security"},
+                {value: "Governance of Enterprise IT", text: "Governance of Enterprise IT"}
+            ];
+        } else if (location === "chattogram") {
+            courses = [
+                {value: "Power BI Data Analyst", text: "Power BI Data Analyst"}
+            ];
+        }
+    }
 
+    // If no courses match, display a message
+    if (courses.length === 0) {
+        courses = [
+            {value: "0", text: "No courses available for this location and phase combination."}
+        ];
     }
 
     // Add courses to the select element
@@ -170,3 +242,4 @@ function updateCourses() {
         courseSelect.appendChild(option);
     });
 }
+
