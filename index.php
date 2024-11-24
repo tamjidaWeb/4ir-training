@@ -199,11 +199,11 @@ session_start();
                         </p>
 
                         <ul class="custom-list">
-                            <li class="pclass">Dhaka</li>
-                            <li class="pclass">Chattogram</li>
-                            <li class="pclass">Khulna</li>
-                            <li class="pclass">Rajshahi</li>
-                            <li class="pclass">Sylhet</li>
+                            <li class="pclass">Dhaka (<a target="_blank" href="https://www.google.com/maps/dir//Level+9,+F+Haque+Tower,+107+Sonargaon+Road,+Dhaka+1205/@23.7479365,90.3102035,30331m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x3755b8bd757aaaab:0x8dab0992a43b1efc!2m2!1d90.3926051!2d23.7479583?entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D">Level 9, F Haque Tower, 107 Sonargaon Road, Dhaka 1205</a>)</li>
+                            <li class="pclass">Chattogram (Training Venue would be Inside Main Town of Chattogram)</li>
+                            <li class="pclass">Khulna (Training Venue would be Inside Main Town of Khulna)</li>
+                            <li class="pclass">Rajshahi (Training Venue would be Inside Main Town of Rajshahi)</li>
+                            <li class="pclass">Sylhet (Training Venue would be Inside Main Town of Sylhet)</li>
                         </ul>
 
                         <p id="italic">
@@ -220,10 +220,8 @@ session_start();
 
                         <ul class="custom-list">
                             <li>
-                                <span class="pclass">95% Tuition Subsidy:</span>
-                                Training costs are largely covered by
-                                DEIEDP-BHTPA, with participants only
-                                required to contribute 5%.
+                                <span class="pclass">Tuition Subsidy:</span>
+                                A total of 10% (5000 tk approx.) of the tuition fee has to be paid before the starting of the training session, whereas 5% (Taka 2,500 approx.) is refundable upon successful completion of the course.
                             </li>
 
                             <li>
@@ -279,6 +277,11 @@ session_start();
                                 Those interested in self-employment or
                                 freelancing in high-tech fields.
                             </li>
+
+                            <li>
+                                <span class="pclass">Inclusivity:</span>
+                                Disabled, transgender and third-gender individuals are encouraged to apply.
+                            </li>
                         </ul>
 
                         <p class="pclass" id="eligibility">
@@ -287,7 +290,7 @@ session_start();
                         <ul>
                             <li>
                                 Relevant academic background in IT, CSE,
-                                EEE, ETE, or similar fields.
+                                EEE, SWE, ECE, ETE, or similar fields.
                             </li>
                             <li>
                                 Must pass an entry-level assessment process.
@@ -307,15 +310,15 @@ session_start();
                             </li>
                         </ul>
 
-                        <hr/>
+                        <!--<hr/>-->
 
-                        <p class="pclass" id="how">Security Money Policy</p>
-                        <p>
-                            To ensure commitment and accountability, <b>10% of the certification cost will be charged as security money</b> from trainees at the start of the
-                            program. This
-                            amount will be <b>refunded after successful completion of the training and receiving the certification</b>. This policy is designed to encourage full
-                            participation and successful outcomes for all trainees.
-                        </p>
+                        <!--<p class="pclass" id="how">Security Money Policy</p>-->
+                        <!--<p>-->
+                        <!--    To ensure commitment and accountability, <b>10% of the certification cost will be charged as security money</b> from trainees at the start of the-->
+                        <!--    program. This-->
+                        <!--    amount will be <b>refunded after successful completion of the training and receiving the certification</b>. This policy is designed to encourage full-->
+                        <!--    participation and successful outcomes for all trainees.-->
+                        <!--</p>-->
 
                         <hr/>
 
@@ -426,6 +429,7 @@ session_start();
                                 />
                                 <label class="custom-control-label" for="male">Male</label>
                             </div>
+
                             <div class="custom-radio">
                                 <input
                                         type="radio"
@@ -439,6 +443,22 @@ session_start();
                                         class="custom-control-label"
                                         for="female"
                                 >Female</label
+                                >
+                            </div>
+
+                            <div class="custom-radio">
+                                <input
+                                        type="radio"
+                                        name="gender"
+                                        value="other"
+                                        class="custom-control-input"
+                                        id="other"
+                                        required
+                                />
+                                <label
+                                        class="custom-control-label"
+                                        for="other"
+                                >Others</label
                                 >
                             </div>
                         </div>
@@ -675,7 +695,7 @@ session_start();
 
                     <div class="row">
                         <div class="col-6" id="spanid">
-                            <p> Learn More...</p>
+                            <!--<p> Learn More...</p>-->
                         </div>
 
                         <div class="col-6">
@@ -736,48 +756,48 @@ session_start();
                                     </a>
                                 </li>
 
-                                <li class="li-li">
-                                    <a href="https://x.com/wiztecbd" target="_blank">
-                                        <!-- Twitter -->
-                                        <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="16"
-                                                height="16"
-                                                fill="currentColor"
-                                                class="bi bi-twitter"
-                                                viewBox="0 0 16 16"
-                                        >
-                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-                                        </svg>
-                                    </a>
-                                </li>
+                                <!--<li class="li-li">-->
+                                <!--    <a href="https://x.com/wiztecbd" target="_blank">-->
+                                <!-- Twitter -->
+                                <!--        <svg-->
+                                <!--                xmlns="http://www.w3.org/2000/svg"-->
+                                <!--                width="16"-->
+                                <!--                height="16"-->
+                                <!--                fill="currentColor"-->
+                                <!--                class="bi bi-twitter"-->
+                                <!--                viewBox="0 0 16 16"-->
+                                <!--        >-->
+                                <!--            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>-->
+                                <!--        </svg>-->
+                                <!--    </a>-->
+                                <!--</li>-->
 
-                                <li class="li-li">
-                                    <a href="https://join.skype.com/invite/ti82mbuKUXO9" target="_blank">
-                                        <!-- skype -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skype" viewBox="0 0 16 16">
-                                            <path d="M4.671 0c.88 0 1.733.247 2.468.702a7.42 7.42 0 0 1 6.02 2.118 7.37 7.37 0 0 1 2.167 5.215q0 .517-.072 1.026a4.66 4.66 0 0 1 .6 2.281 4.64 4.64 0 0 1-1.37 3.294A4.67 4.67 0 0 1 11.18 16c-.84 0-1.658-.226-2.37-.644a7.42 7.42 0 0 1-6.114-2.107A7.37 7.37 0 0 1 .529 8.035q0-.545.08-1.081a4.644 4.644 0 0 1 .76-5.59A4.68 4.68 0 0 1 4.67 0zm.447 7.01c.18.309.43.572.729.769a7 7 0 0 0 1.257.653q.737.308 1.145.523c.229.112.437.264.615.448.135.142.21.331.21.528a.87.87 0 0 1-.335.723c-.291.196-.64.289-.99.264a2.6 2.6 0 0 1-1.048-.206 11 11 0 0 1-.532-.253 1.3 1.3 0 0 0-.587-.15.72.72 0 0 0-.501.176.63.63 0 0 0-.195.491.8.8 0 0 0 .148.482 1.2 1.2 0 0 0 .456.354 5.1 5.1 0 0 0 2.212.419 4.6 4.6 0 0 0 1.624-.265 2.3 2.3 0 0 0 1.08-.801c.267-.39.402-.855.386-1.327a2.1 2.1 0 0 0-.279-1.101 2.5 2.5 0 0 0-.772-.792A7 7 0 0 0 8.486 7.3a1 1 0 0 0-.145-.058 18 18 0 0 1-1.013-.447 1.8 1.8 0 0 1-.54-.387.73.73 0 0 1-.2-.508.8.8 0 0 1 .385-.723 1.76 1.76 0 0 1 .968-.247c.26-.003.52.03.772.096q.412.119.802.293c.105.049.22.075.336.076a.6.6 0 0 0 .453-.19.7.7 0 0 0 .18-.496.72.72 0 0 0-.17-.476 1.4 1.4 0 0 0-.556-.354 3.7 3.7 0 0 0-.708-.183 6 6 0 0 0-1.022-.078 4.5 4.5 0 0 0-1.536.258 2.7 2.7 0 0 0-1.174.784 1.9 1.9 0 0 0-.45 1.287c-.01.37.076.736.25 1.063"/>
-                                        </svg>
-                                    </a>
-                                </li>
+                                <!--<li class="li-li">-->
+                                <!--    <a href="https://join.skype.com/invite/ti82mbuKUXO9" target="_blank">-->
+                                <!-- skype -->
+                                <!--        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skype" viewBox="0 0 16 16">-->
+                                <!--            <path d="M4.671 0c.88 0 1.733.247 2.468.702a7.42 7.42 0 0 1 6.02 2.118 7.37 7.37 0 0 1 2.167 5.215q0 .517-.072 1.026a4.66 4.66 0 0 1 .6 2.281 4.64 4.64 0 0 1-1.37 3.294A4.67 4.67 0 0 1 11.18 16c-.84 0-1.658-.226-2.37-.644a7.42 7.42 0 0 1-6.114-2.107A7.37 7.37 0 0 1 .529 8.035q0-.545.08-1.081a4.644 4.644 0 0 1 .76-5.59A4.68 4.68 0 0 1 4.67 0zm.447 7.01c.18.309.43.572.729.769a7 7 0 0 0 1.257.653q.737.308 1.145.523c.229.112.437.264.615.448.135.142.21.331.21.528a.87.87 0 0 1-.335.723c-.291.196-.64.289-.99.264a2.6 2.6 0 0 1-1.048-.206 11 11 0 0 1-.532-.253 1.3 1.3 0 0 0-.587-.15.72.72 0 0 0-.501.176.63.63 0 0 0-.195.491.8.8 0 0 0 .148.482 1.2 1.2 0 0 0 .456.354 5.1 5.1 0 0 0 2.212.419 4.6 4.6 0 0 0 1.624-.265 2.3 2.3 0 0 0 1.08-.801c.267-.39.402-.855.386-1.327a2.1 2.1 0 0 0-.279-1.101 2.5 2.5 0 0 0-.772-.792A7 7 0 0 0 8.486 7.3a1 1 0 0 0-.145-.058 18 18 0 0 1-1.013-.447 1.8 1.8 0 0 1-.54-.387.73.73 0 0 1-.2-.508.8.8 0 0 1 .385-.723 1.76 1.76 0 0 1 .968-.247c.26-.003.52.03.772.096q.412.119.802.293c.105.049.22.075.336.076a.6.6 0 0 0 .453-.19.7.7 0 0 0 .18-.496.72.72 0 0 0-.17-.476 1.4 1.4 0 0 0-.556-.354 3.7 3.7 0 0 0-.708-.183 6 6 0 0 0-1.022-.078 4.5 4.5 0 0 0-1.536.258 2.7 2.7 0 0 0-1.174.784 1.9 1.9 0 0 0-.45 1.287c-.01.37.076.736.25 1.063"/>-->
+                                <!--        </svg>-->
+                                <!--    </a>-->
+                                <!--</li>-->
 
-                                <li class="li-li">
-                                    <a href="https://wiztecbd.com/" target="_blank">
-                                        <!-- Google -->
-                                        <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="16"
-                                                height="16"
-                                                fill="currentColor"
-                                                class="bi bi-google"
-                                                viewBox="0 0 16 16"
-                                        >
-                                            <path
-                                                    d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"
-                                            />
-                                        </svg>
-                                    </a>
-                                </li>
+                                <!--<li class="li-li">-->
+                                <!--    <a href="https://wiztecbd.com/" target="_blank">-->
+                                <!-- Google -->
+                                <!--        <svg-->
+                                <!--                xmlns="http://www.w3.org/2000/svg"-->
+                                <!--                width="16"-->
+                                <!--                height="16"-->
+                                <!--                fill="currentColor"-->
+                                <!--                class="bi bi-google"-->
+                                <!--                viewBox="0 0 16 16"-->
+                                <!--        >-->
+                                <!--            <path-->
+                                <!--                    d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"-->
+                                <!--            />-->
+                                <!--        </svg>-->
+                                <!--    </a>-->
+                                <!--</li>-->
                             </ul>
                         </div>
                     </div>
