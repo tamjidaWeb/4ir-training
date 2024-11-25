@@ -9,11 +9,13 @@ session_start();
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>4ir Training</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="shortcut icon" href="https://wiztecbd.com/assets/dist/img/w2.png">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="" />
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous" />
 
     <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script> -->
@@ -23,57 +25,37 @@ session_start();
     <div class="container">
         <!--------------------- Banner section started------------------ -->
 
-        <?php
-        // Success Message
-        if (isset($_SESSION['success_message'])): ?>
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Success!',
-                        text: '<?= addslashes($_SESSION['success_message']); ?>',
-                        confirmButtonText: 'OK'
-                    });
-                });
-            </script>
+        <!-- Success Message -->
+        <?php if (isset($_SESSION['success_message'])): ?>
+            <div
+                class="alert alert-success alert-dismissible fade show"
+                role="alert">
+                <strong>Success!</strong>
+                <?= $_SESSION['success_message']; ?>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="alert"
+                    aria-label="Close"></button>
+            </div>
             <?php unset($_SESSION['success_message']); ?>
         <?php endif; ?>
 
-        <?php
-        // Error Message
-        if (isset($_SESSION['error_message'])): ?>
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Error!',
-                        text: '<?= addslashes($_SESSION['error_message']); ?>',
-                        confirmButtonText: 'OK'
-                    });
-                });
-            </script>
+        <!-- Error Message -->
+        <?php if (isset($_SESSION['error_message'])): ?>
+            <div
+                class="alert alert-danger alert-dismissible fade show"
+                role="alert">
+                <strong>Error!</strong>
+                <?= $_SESSION['error_message']; ?>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="alert"
+                    aria-label="Close"></button>
+            </div>
             <?php unset($_SESSION['error_message']); ?>
         <?php endif; ?>
-
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="row">
             <div class="col-12">
@@ -437,16 +419,16 @@ session_start();
                                         </li>
                                     </ul>
 
-                        <ul class="custom-list">
-                            <li class="pclass">Dhaka (<a target="_blank"
-                                                         href="https://www.google.com/maps/dir//Level+9,+F+Haque+Tower,+107+Sonargaon+Road,+Dhaka+1205/@23.7479365,90.3102035,30331m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x3755b8bd757aaaab:0x8dab0992a43b1efc!2m2!1d90.3926051!2d23.7479583?entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D">Level
-                                    9, F Haque Tower, 107 Sonargaon Road, Dhaka 1205</a>)
-                            </li>
-                            <li class="pclass">Chattogram (Training Venue would be Inside Main Town of Chattogram)</li>
-                            <li class="pclass">Khulna (Training Venue would be Inside Main Town of Khulna)</li>
-                            <li class="pclass">Rajshahi (Training Venue would be Inside Main Town of Rajshahi)</li>
-                            <li class="pclass">Sylhet (Training Venue would be Inside Main Town of Sylhet)</li>
-                        </ul>
+                                    <p id="italic">
+                                        All training centers are equipped
+                                        with the latest technology and
+                                        tools, including high-speed
+                                        internet, emergency power backup,
+                                        and modern computer labs.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
                         <!-- ----------------------Six ( Key Benefits )------------------- -->
 
@@ -493,12 +475,16 @@ session_start();
                                             and technologies
                                         </li>
 
-                        <ul class="custom-list">
-                            <li>
-                                <span class="pclass">Tuition Subsidy:</span>
-                                A total of 10% (5000 tk approx.) of the tuition fee has to be paid before the starting of the training session, whereas 5% (Taka 2,500 approx.) is
-                                refundable upon successful completion of the course.
-                            </li>
+                                        <li>
+                                            <span class="pclass">Vendor Certification Fees
+                                                Reimbursement:</span>
+                                            Certification fees are fully
+                                            reimbursed upon passing the
+                                            exam, allowing you to earn
+                                            internationally recognized
+                                            credentials at no additional
+                                            cost.
+                                        </li>
 
                                         <li>
                                             <span class="pclass">Job Placement
@@ -1228,13 +1214,7 @@ session_start();
     </section>
 
     <!-- Bootstrap Bundle with Popper (Required for JavaScript functionality) -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-            crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- <script src="script.js"></script> -->
     <script src="valid.js"></script>
 </body>
