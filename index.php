@@ -111,276 +111,580 @@ session_start();
                         Join us in shaping the future of Bangladesh’s
                         digital economy!
                     </p>
-                    <span class="load_more_content" id="load_more_content">Load more..</span>
 
-                    <div class="load_for_mobile_device" id="load_for_mobile_device">
-                        <hr/>
-                        <p class="pclass" id="p-id">Program Overview:</p>
-
-                        <p>
-                            This training program provides specialized,
-                            hands-on learning in the latest 4IR
-                            technologies, specifically tailored for
-                            individuals looking to advance in the IT/ITES
-                            sector. With dedicated support, career
-                            counseling, and job placement assistance,
-                            participants will gain skills and qualifications
-                            that are in high demand in the industry.
-                        </p>
-
-                        <p class="pclass" id="specialization-heading">
-                            Specializations Available:
-                        </p>
-
-                        <ol>
-                            <li>
-                                <span>Big Data</span> - Data Analytics,
-                                Power BI Data Analysis
-                            </li>
-                            <li>
-                                <span>Artificial Intelligence</span> - AI
-                                Professional, AI Expert, Machine Learning
-                            </li>
-                            <li>
-                                <span>Embedded Systems</span> - Schematic &
-                                Circuit Design, Microcontroller Programming
-                            </li>
-                            <li>
-                                <span>Robotics</span> - Robotic Process
-                                Automation, Automation 360
-                                Professional,UiPath
-                            </li>
-                            <li>
-                                <span>Cybersecurity </span>- Information
-                                Systems Security, Governance of Enterprise
-                                IT
-                            </li>
-                        </ol>
-                        <p>
-                            <span class="pclass">Program Duration</span>: Up to 6 months, with each specialization featuring
-                            <span class="pclass">160 hours</span> of intensive training, including
-                            <span class="pclass">project-based learning</span>
-                            for applicable courses.
-                        </p>
-
-                        <br/>
-
-                        <p>
-                            <span class="pclass">Certification Options:</span>
-                            Each specialization includes vendor-specific
-                            certifications from recognized bodies like
-                            Microsoft, Google, Automation Anywhere, UiPath,
-                            and CISSP
-                        </p>
-
-                        <hr/>
-
-                        <div class="container mt-5">
-                            <!-- Tabs Navigation -->
-                            <ul class="nav nav-tabs" id="phaseTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link active" id="phase1-tab" data-bs-toggle="tab" href="#phase1" role="tab" aria-controls="phase1" aria-selected="true">Phase
-                                        1</a>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="phase2-tab" data-bs-toggle="tab" href="#phase2" role="tab" aria-controls="phase2" aria-selected="false">Phase 2</a>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="phase3-tab" data-bs-toggle="tab" href="#phase3" role="tab" aria-controls="phase3" aria-selected="false">Phase 3</a>
-                                </li>
-                            </ul>
-
-                            <!-- Tab Content -->
-                            <div class="tab-content mt-3" id="phaseTabContent">
-                                <!-- Phase 1 -->
-                                <div class="tab-pane fade show active" id="phase1" role="tabpanel" aria-labelledby="phase1-tab">
-                                    <div class="row">
-                                        <div class="col-12 col-md-12">
-                                            <img src="image/2.png" alt="Phase 1 Image" class="img-fluid">
-                                        </div>
-                                    </div>
+                    <div
+                            class="accordion accordion-flush overview-class"
+                            id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2
+                                    class="accordion-header"
+                                    id="flush-headingOne">
+                                <button
+                                        class="accordion-button collapsed pclass"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                    Program Overview
+                                </button>
+                            </h2>
+                            <div
+                                    id="flush-collapseOne"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne"
+                                    data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    This training program provides
+                                    specialized, hands-on learning in the
+                                    latest 4IR technologies, specifically
+                                    tailored for individuals looking to
+                                    advance in the IT/ITES sector. With
+                                    dedicated support, career counseling,
+                                    and job placement assistance,
+                                    participants will gain skills and
+                                    qualifications that are in high demand
+                                    in the industry..
                                 </div>
-                                <!-- Phase 2 -->
-                                <div class="tab-pane fade" id="phase2" role="tabpanel" aria-labelledby="phase2-tab">
-                                    <div class="row">
-                                        <div class="col-12 col-md-12">
-                                            <img src="image/3.png" alt="Phase 2 Image" class="img-fluid">
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+
+                        <!-- --------------------Two (Courses) ----------------->
+                        <div class="accordion-item">
+                            <h2
+                                    class="accordion-header"
+                                    id="flush-headingTwo">
+                                <button
+                                        class="accordion-button collapsed pclass"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                    Courses
+                                </button>
+                            </h2>
+                            <div
+                                    id="flush-collapseTwo"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo"
+                                    data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ol>
+                                        <li>
+                                            <span>Big Data</span>
+                                            - Data Analytics, Power BI Data
+                                            Analysis
+                                        </li>
+                                        <li>
+                                            <span>Artificial
+                                                Intelligence</span>
+                                            - AI Professional, AI Expert,
+                                            Machine Learning
+                                        </li>
+                                        <li>
+                                            <span>Embedded Systems</span>
+                                            - Schematic & Circuit Design,
+                                            Microcontroller Programming
+                                        </li>
+                                        <li>
+                                            <span>Robotics</span>
+                                            - Robotic Process Automation,
+                                            Automation 360
+                                            Professional,UiPath
+                                        </li>
+                                        <li>
+                                            <span>Cybersecurity</span>
+                                            - Information Systems Security,
+                                            Governance of Enterprise IT
+                                        </li>
+                                    </ol>
                                 </div>
-                                <!-- Phase 3 -->
-                                <div class="tab-pane fade" id="phase3" role="tabpanel" aria-labelledby="phase3-tab">
-                                    <div class="row">
-                                        <div class="col-12 col-md-12">
-                                            <img src="image/4.png" alt="Phase 3 Image" class="img-fluid">
+                            </div>
+                        </div>
+
+                        <!-- ----------------Three(  Program Duration)------------ -->
+                        <div class="accordion-item">
+                            <h2
+                                    class="accordion-header"
+                                    id="flush-headingThree">
+                                <button
+                                        class="accordion-button collapsed pclass"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                    Program Duration
+                                </button>
+                            </h2>
+                            <div
+                                    id="flush-collapseThree"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree"
+                                    data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        <span class="pclass">Up to 6 months, with each
+                                            specialization featuring</span>
+                                        <span class="pclass">160 hours</span>
+                                        of intensive training, including
+                                        <span class="pclass">project-based learning</span>
+                                        for applicable courses.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- -------------------Four( Phase Certification & Timeline) -------------------->
+                        <div class="accordion-item">
+                            <h2
+                                    class="accordion-header"
+                                    id="flush-headingFour">
+                                <button
+                                        class="accordion-button collapsed pclass"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                    Phase Certification & Timeline
+                                </button>
+                            </h2>
+                            <div
+                                    id="flush-collapseFour"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFour"
+                                    data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        <span class="pclass">Certification Options:</span>
+                                        Each specialization includes
+                                        vendor-specific certifications from
+                                        recognized bodies like Microsoft,
+                                        Google, Automation Anywhere, UiPath,
+                                        and CISSP
+                                    </p>
+                                    <div class="container mt-5">
+                                        <!-- Tabs Navigation -->
+                                        <ul
+                                                class="nav nav-tabs"
+                                                id="phaseTab"
+                                                role="tablist">
+                                            <li
+                                                    class="nav-item"
+                                                    role="presentation">
+                                                <a
+                                                        class="nav-link active"
+                                                        id="phase1-tab"
+                                                        data-bs-toggle="tab"
+                                                        href="#phase1"
+                                                        role="tab"
+                                                        aria-controls="phase1"
+                                                        aria-selected="true">Phase 1</a>
+                                            </li>
+                                            <li
+                                                    class="nav-item"
+                                                    role="presentation">
+                                                <a
+                                                        class="nav-link"
+                                                        id="phase2-tab"
+                                                        data-bs-toggle="tab"
+                                                        href="#phase2"
+                                                        role="tab"
+                                                        aria-controls="phase2"
+                                                        aria-selected="false">Phase 2</a>
+                                            </li>
+                                            <li
+                                                    class="nav-item"
+                                                    role="presentation">
+                                                <a
+                                                        class="nav-link"
+                                                        id="phase3-tab"
+                                                        data-bs-toggle="tab"
+                                                        href="#phase3"
+                                                        role="tab"
+                                                        aria-controls="phase3"
+                                                        aria-selected="false">Phase 3</a>
+                                            </li>
+                                        </ul>
+
+                                        <!-- Tab Content -->
+                                        <div
+                                                class="tab-content mt-3"
+                                                id="phaseTabContent">
+                                            <!-- Phase 1 -->
+                                            <div
+                                                    class="tab-pane fade show active"
+                                                    id="phase1"
+                                                    role="tabpanel"
+                                                    aria-labelledby="phase1-tab">
+                                                <div class="row">
+                                                    <div
+                                                            class="col-12 col-md-12">
+                                                        <img
+                                                                src="image/2.png"
+                                                                alt="Phase 1 Image"
+                                                                class="img-fluid" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Phase 2 -->
+                                            <div
+                                                    class="tab-pane fade"
+                                                    id="phase2"
+                                                    role="tabpanel"
+                                                    aria-labelledby="phase2-tab">
+                                                <div class="row">
+                                                    <div
+                                                            class="col-12 col-md-12">
+                                                        <img
+                                                                src="image/3.png"
+                                                                alt="Phase 2 Image"
+                                                                class="img-fluid" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Phase 3 -->
+                                            <div
+                                                    class="tab-pane fade"
+                                                    id="phase3"
+                                                    role="tabpanel"
+                                                    aria-labelledby="phase3-tab">
+                                                <div class="row">
+                                                    <div
+                                                            class="col-12 col-md-12">
+                                                        <img
+                                                                src="image/4.png"
+                                                                alt="Phase 3 Image"
+                                                                class="img-fluid" />
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <hr/>
+                        <!-- ---------------Five(Location) -------------->
 
-                        <p class="pclass" id="locations">Locations:</p>
+                        <div class="accordion-item">
+                            <h2
+                                    class="accordion-header"
+                                    id="flush-headingFive">
+                                <button
+                                        class="accordion-button collapsed pclass"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFive"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseFive">
+                                    Locations
+                                </button>
+                            </h2>
+                            <div
+                                    id="flush-collapseFive"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFive"
+                                    data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Trainings are conducted across
+                                        multiple cities, making it
+                                        accessible for participants
+                                        nationwide
+                                    </p>
 
-                        <p>
-                            Trainings are conducted across multiple cities,
-                            making it accessible for participants nationwide
-                        </p>
+                                    <ul class="custom-list">
+                                        <li class="pclass">
+                                            Dhaka (
+                                            <a
+                                                    target="_blank"
+                                                    href="https://www.google.com/maps/dir//Level+9,+F+Haque+Tower,+107+Sonargaon+Road,+Dhaka+1205/@23.7479365,90.3102035,30331m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x3755b8bd757aaaab:0x8dab0992a43b1efc!2m2!1d90.3926051!2d23.7479583?entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D">
+                                                Level 9, F Haque Tower, 107
+                                                Sonargaon Road, Dhaka 1205
+                                            </a>
+                                            )
+                                        </li>
+                                        <li class="pclass">
+                                            Chattogram (Training Venue would
+                                            be Inside Main Town of
+                                            Chattogram)
+                                        </li>
+                                        <li class="pclass">
+                                            Khulna (Training Venue would be
+                                            Inside Main Town of Khulna)
+                                        </li>
+                                        <li class="pclass">
+                                            Rajshahi (Training Venue would
+                                            be Inside Main Town of Rajshahi)
+                                        </li>
+                                        <li class="pclass">
+                                            Sylhet (Training Venue would be
+                                            Inside Main Town of Sylhet)
+                                        </li>
+                                    </ul>
 
-                        <ul class="custom-list">
-                            <li class="pclass">Dhaka (<a target="_blank"
-                                                         href="https://www.google.com/maps/dir//Level+9,+F+Haque+Tower,+107+Sonargaon+Road,+Dhaka+1205/@23.7479365,90.3102035,30331m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x3755b8bd757aaaab:0x8dab0992a43b1efc!2m2!1d90.3926051!2d23.7479583?entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D">Level
-                                    9, F Haque Tower, 107 Sonargaon Road, Dhaka 1205</a>)
-                            </li>
-                            <li class="pclass">Chattogram (Training Venue would be Inside Main Town of Chattogram)</li>
-                            <li class="pclass">Khulna (Training Venue would be Inside Main Town of Khulna)</li>
-                            <li class="pclass">Rajshahi (Training Venue would be Inside Main Town of Rajshahi)</li>
-                            <li class="pclass">Sylhet (Training Venue would be Inside Main Town of Sylhet)</li>
-                        </ul>
+                                    <p id="italic">
+                                        All training centers are equipped
+                                        with the latest technology and
+                                        tools, including high-speed
+                                        internet, emergency power backup,
+                                        and modern computer labs.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-                        <p id="italic">
-                            All training centers are equipped with the
-                            latest technology and tools, including
-                            high-speed internet, emergency power backup, and
-                            modern computer labs.
-                        </p>
+                        <!-- ----------------------Six ( Key Benefits )------------------- -->
 
-                        <hr/>
-                        <br/>
+                        <div class="accordion-item">
+                            <h2
+                                    class="accordion-header"
+                                    id="flush-headingSix">
+                                <button
+                                        class="accordion-button collapsed pclass"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseSix"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseSix">
+                                    Key Benefits
+                                </button>
+                            </h2>
+                            <div
+                                    id="flush-collapseSix"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingSix"
+                                    data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="custom-list">
+                                        <li>
+                                            <span class="pclass">Tuition Subsidy:</span>
+                                            A total of 10% (5000 tk approx.)
+                                            of the tuition fee has to be
+                                            paid before the starting of the
+                                            training session, whereas 5%
+                                            (Taka 2,500 approx.) is
+                                            refundable upon successful
+                                            completion of the course.
+                                        </li>
 
-                        <p class="pclass" id="key">Key Benefits:</p>
+                                        <li>
+                                            <span class="pclass">Vendor Professional
+                                                Certification:</span>
+                                            Achieving vendor certifications
+                                            enhances credibility, provides a
+                                            competitive edge in the job
+                                            market, and ensures alignment
+                                            with the latest industry tools
+                                            and technologies
+                                        </li>
 
-                        <ul class="custom-list">
-                            <li>
-                                <span class="pclass">Tuition Subsidy:</span>
-                                A total of 10% (5000 tk approx.) of the tuition fee has to be paid before the starting of the training session, whereas 5% (Taka 2,500 approx.) is
-                                refundable upon successful completion of the course.
-                            </li>
+                                        <li>
+                                            <span class="pclass">Vendor Certification Fees
+                                                Reimbursement:</span>
+                                            Certification fees are fully
+                                            reimbursed upon passing the
+                                            exam, allowing you to earn
+                                            internationally recognized
+                                            credentials at no additional
+                                            cost.
+                                        </li>
 
-                            <li>
-                                <span class="pclass">Vendor Professional Certification:</span>
-                                Achieving vendor certifications enhances credibility, provides a competitive edge in the job market, and ensures alignment with the latest industry
-                                tools and technologies
-                            </li>
+                                        <li>
+                                            <span class="pclass">Job Placement
+                                                Assistance:</span>
+                                            The program includes
+                                            job-matching and freelance
+                                            support, with a focus on placing
+                                            participants in relevant roles
+                                            within STPs, HTPs, and their
+                                            supply chains.
+                                        </li>
+                                        <li>
+                                            <span class="pclass">Soft Skills
+                                                Development:</span>
+                                            Receive training in essential
+                                            workplace skills, including
+                                            communication, teamwork, and
+                                            leadership.
+                                        </li>
+                                        <li>
+                                            <span class="pclass">Hands-On Industry
+                                                Projects:</span>
+                                            Practical, project-based
+                                            learning in real-world industry
+                                            scenarios ensures job-ready
+                                            skills.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-                            <li>
-                                <span class="pclass">Vendor Certification Fees Reimbursement:</span>
-                                Certification fees are fully reimbursed upon
-                                passing the exam, allowing you to earn
-                                internationally recognized credentials at no
-                                additional cost.
-                            </li>
+                        <!-- ---------------Seven( Who Should Apply?) ---------------->
 
-                            <li>
-                                <span class="pclass">Job Placement Assistance:</span>
-                                The program includes job-matching and
-                                freelance support, with a focus on placing
-                                participants in relevant roles within STPs,
-                                HTPs, and their supply chains.
-                            </li>
-                            <li>
-                                <span class="pclass">Soft Skills Development:</span>
-                                Receive training in essential workplace
-                                skills, including communication, teamwork,
-                                and leadership.
-                            </li>
-                            <li>
-                                <span class="pclass">Hands-On Industry Projects:</span>
-                                Practical, project-based learning in
-                                real-world industry scenarios ensures
-                                job-ready skills.
-                            </li>
-                        </ul>
+                        <div class="accordion-item">
+                            <h2
+                                    class="accordion-header"
+                                    id="flush-headingSeven">
+                                <button
+                                        class="accordion-button collapsed pclass"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseSeven"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseSeven">
+                                    Who Should Apply?
+                                </button>
+                            </h2>
+                            <div
+                                    id="flush-collapseSeven"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingSeven"
+                                    data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>This program is ideal for:</p>
+                                    <ul>
+                                        <li>
+                                            <span class="pclass">Fresh Graduates and Job
+                                                Seekers:</span>
+                                            Looking for specialized skills
+                                            in IT/ITES fields.
+                                        </li>
+                                        <li>
+                                            <span class="pclass">Current Employees:</span>
+                                            Working in IT/ITES firms or
+                                            supply chains looking to advance
+                                            or transition into 4IR
+                                            technologies.
+                                        </li>
+                                        <li>
+                                            <span class="pclass">Aspiring Entrepreneurs and
+                                                Freelancers:</span>
+                                            Those interested in
+                                            self-employment or freelancing
+                                            in high-tech fields.
+                                        </li>
 
-                        <hr/>
+                                        <li>
+                                            <span class="pclass">Inclusivity:</span>
+                                            Disabled, transgender and
+                                            third-gender individuals are
+                                            encouraged to apply.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-                        <p class="pclass" id="who">Who Should Apply?</p>
-                        <p>This program is ideal for:</p>
-                        <ul>
-                            <li>
-                                <span class="pclass">Fresh Graduates and Job Seekers: </span>Looking for specialized skills in IT/ITES fields.
-                            </li>
-                            <li>
-                                <span class="pclass">Current Employees: </span>Working in IT/ITES firms or supply chains
-                                looking to advance or transition into 4IR
-                                technologies.
-                            </li>
-                            <li>
-                                <span class="pclass">Aspiring Entrepreneurs and Freelancers:</span>
-                                Those interested in self-employment or
-                                freelancing in high-tech fields.
-                            </li>
+                        <!-- -----------------------Eight ( Eligibility Requirements) ----------------->
+                        <div class="accordion-item">
+                            <h2
+                                    class="accordion-header"
+                                    id="flush-headingEight">
+                                <button
+                                        class="accordion-button collapsed pclass"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseEight"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseEight">
+                                    Eligibility Requirements
+                                </button>
+                            </h2>
+                            <div
+                                    id="flush-collapseEight"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingEight"
+                                    data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>
+                                            Relevant academic background in
+                                            IT, CSE, EEE, SWE, ECE, ETE, or
+                                            similar fields.
+                                        </li>
+                                        <li>
+                                            Must pass an entry-level
+                                            assessment process.
+                                        </li>
+                                        <li>
+                                            Open to recent graduates,
+                                            current employees, and those
+                                            aiming to enter the IT/ITES
+                                            sector.
+                                        </li>
 
-                            <li>
-                                <span class="pclass">Inclusivity:</span>
-                                Disabled, transgender and third-gender individuals are encouraged to apply.
-                            </li>
-                        </ul>
+                                        <li>
+                                            <span class="pclass">Diversity Focus:</span>
+                                            Applications are encouraged from
+                                            women, individuals with
+                                            disabilities, and other
+                                            underrepresented groups to
+                                            foster a more inclusive tech
+                                            industry.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ------------------Nine ( How to Apply) ----------------->
+                        <div class="accordion-item">
+                            <h2
+                                    class="accordion-header"
+                                    id="flush-headingNine">
+                                <button
+                                        class="accordion-button collapsed pclass"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseNine"
+                                        aria-expanded="false"
+                                        aria-controls="flush-collapseNine">
+                                    How to Apply
+                                </button>
+                            </h2>
+                            <div
+                                    id="flush-collapseNine"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingNine"
+                                    data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        To apply, complete the online
+                                        registration form. Please ensure you
+                                        meet the eligibility criteria before
+                                        applying. For questions or
+                                        additional support, feel free to
+                                        contact our support team.
+                                    </p>
 
-                        <p class="pclass" id="eligibility">
-                            Eligibility Requirements:
-                        </p>
-                        <ul>
-                            <li>
-                                Relevant academic background in IT, CSE,
-                                EEE, SWE, ECE, ETE, or similar fields.
-                            </li>
-                            <li>
-                                Must pass an entry-level assessment process.
-                            </li>
-                            <li>
-                                Open to recent graduates, current employees,
-                                and those aiming to enter the IT/ITES
-                                sector.
-                            </li>
+                                    <hr />
 
-                            <li>
-                                <span class="pclass">Diversity Focus:</span>
-                                Applications are encouraged from women,
-                                individuals with disabilities, and other
-                                underrepresented groups to foster a more
-                                inclusive tech industry.
-                            </li>
-                        </ul>
+                                    <p class="pclass">
+                                        Application Deadline: 26th November,
+                                        2024
+                                    </p>
 
-                        <!--<hr/>-->
-
-                        <!--<p class="pclass" id="how">Security Money Policy</p>-->
-                        <!--<p>-->
-                        <!--    To ensure commitment and accountability, <b>10% of the certification cost will be charged as security money</b> from trainees at the start of the-->
-                        <!--    program. This-->
-                        <!--    amount will be <b>refunded after successful completion of the training and receiving the certification</b>. This policy is designed to encourage full-->
-                        <!--    participation and successful outcomes for all trainees.-->
-                        <!--</p>-->
-
-                        <hr/>
-
-                        <p class="pclass" id="how">How to Apply:</p>
-                        <p>
-                            To apply, complete the online registration form.
-                            Please ensure you meet the eligibility criteria
-                            before applying. For questions or additional
-                            support, feel free to contact our support team.
-                        </p>
-
-                        <hr/>
-
-                        <p class="pclass">
-                            Application Deadline: 26th November, 2024
-                        </p>
-
-                        <br/>
-                        <p>
-                            Seize this chance to gain expertise in 4IR
-                            technologies, open doors to rewarding career
-                            paths, and join Bangladesh's leading digital
-                            transformation journey. Apply today and take the
-                            first step toward a future-ready career!
-                        </p>
-
-                        <span class="load_more_content" id="load_less">Load less..</span>
+                                    <br />
+                                    <p>
+                                        Seize this chance to gain expertise
+                                        in 4IR technologies, open doors to
+                                        rewarding career paths, and join
+                                        Bangladesh's leading digital
+                                        transformation journey. Apply today
+                                        and take the first step toward a
+                                        future-ready career!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <br />
+                    <br />
                 </div>
             </div>
 
