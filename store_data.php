@@ -6,8 +6,8 @@ session_start();
 // Database connection
 $host = 'localhost';
 $dbname = 'plwpdsqz_wiztecbd';
-$user = 'plwpdsqz_wiztecbd';
-$password = 'FTqe&x+y24gz';
+$user = 'root';
+$password = '';
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $password);
