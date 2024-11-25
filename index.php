@@ -21,11 +21,13 @@ session_start();
         .mobile_responsive {
             display: none;
         }
+
         @media (max-width: 768px) {
             .mobile_responsive {
                 display: inline-block;
                 width: 100%;
             }
+
             .load_for_mobile_device {
                 display: none;
             }
@@ -188,6 +190,77 @@ session_start();
                         </p>
 
                         <hr/>
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <!-- Tabs Navigation -->
+                                <ul class="nav nav-tabs" id="phaseTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" id="phase1-tab" data-bs-toggle="tab" href="#phase1" role="tab" aria-controls="phase1" aria-selected="true">Phase
+                                            1</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="phase2-tab" data-bs-toggle="tab" href="#phase2" role="tab" aria-controls="phase2" aria-selected="false">Phase 2</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="phase3-tab" data-bs-toggle="tab" href="#phase3" role="tab" aria-controls="phase3" aria-selected="false">Phase 3</a>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab Content -->
+                                <div class="tab-content mt-3" id="phaseTabContent">
+                                    <!-- Phase 1 -->
+                                    <div
+                                            class="tab-pane fade show active"
+                                            id="phase1"
+                                            role="tabpanel"
+                                            aria-labelledby="phase1-tab">
+                                        <div class="row">
+                                            <div
+                                                    class="col-12 col-md-12">
+                                                <img
+                                                        src="image/2.png"
+                                                        alt="Phase 1 Image"
+                                                        class="img-fluid"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Phase 2 -->
+                                    <div
+                                            class="tab-pane fade"
+                                            id="phase2"
+                                            role="tabpanel"
+                                            aria-labelledby="phase2-tab">
+                                        <div class="row">
+                                            <div
+                                                    class="col-12 col-md-12">
+                                                <img
+                                                        src="image/3.png"
+                                                        alt="Phase 2 Image"
+                                                        class="img-fluid"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Phase 3 -->
+                                    <div
+                                            class="tab-pane fade"
+                                            id="phase3"
+                                            role="tabpanel"
+                                            aria-labelledby="phase3-tab">
+                                        <div class="row">
+                                            <div
+                                                    class="col-12 col-md-12">
+                                                <img
+                                                        src="image/4.png"
+                                                        alt="Phase 3 Image"
+                                                        class="img-fluid"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr/>
 
                         <p class="pclass" id="locations">Locations:</p>
 
@@ -318,7 +391,7 @@ session_start();
                         <hr/>
 
                         <p class="pclass">
-                            Application Deadline: 20th December, 2024
+                            Application Deadline: 7th December, 2024
                         </p>
 
                         <br/>
@@ -487,99 +560,48 @@ session_start();
                                             Google, Automation Anywhere, UiPath,
                                             and CISSP
                                         </p>
-                                        <div class="container mt-5">
-                                            <!-- Tabs Navigation -->
-                                            <ul
-                                                    class="nav nav-tabs"
-                                                    id="phaseTab"
-                                                    role="tablist">
-                                                <li
-                                                        class="nav-item"
-                                                        role="presentation">
-                                                    <a
-                                                            class="nav-link active"
-                                                            id="phase1-tab"
-                                                            data-bs-toggle="tab"
-                                                            href="#phase1"
-                                                            role="tab"
-                                                            aria-controls="phase1"
-                                                            aria-selected="true">Phase 1</a>
-                                                </li>
-                                                <li
-                                                        class="nav-item"
-                                                        role="presentation">
-                                                    <a
-                                                            class="nav-link"
-                                                            id="phase2-tab"
-                                                            data-bs-toggle="tab"
-                                                            href="#phase2"
-                                                            role="tab"
-                                                            aria-controls="phase2"
-                                                            aria-selected="false">Phase 2</a>
-                                                </li>
-                                                <li
-                                                        class="nav-item"
-                                                        role="presentation">
-                                                    <a
-                                                            class="nav-link"
-                                                            id="phase3-tab"
-                                                            data-bs-toggle="tab"
-                                                            href="#phase3"
-                                                            role="tab"
-                                                            aria-controls="phase3"
-                                                            aria-selected="false">Phase 3</a>
-                                                </li>
-                                            </ul>
+                                        <div class="row mt-5">
+                                            <div class="col-12">
+                                                <!-- Tabs Navigation -->
+                                                <ul class="nav nav-tabs" id="customPhaseTab" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <a class="nav-link active" id="customPhase1-tab" data-bs-toggle="tab" href="#customPhase1" role="tab"
+                                                           aria-controls="customPhase1" aria-selected="true">Phase 1</a>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <a class="nav-link" id="customPhase2-tab" data-bs-toggle="tab" href="#customPhase2" role="tab" aria-controls="customPhase2"
+                                                           aria-selected="false">Phase 2</a>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <a class="nav-link" id="customPhase3-tab" data-bs-toggle="tab" href="#customPhase3" role="tab" aria-controls="customPhase3"
+                                                           aria-selected="false">Phase 3</a>
+                                                    </li>
+                                                </ul>
 
-                                            <!-- Tab Content -->
-                                            <div
-                                                    class="tab-content mt-3"
-                                                    id="phaseTabContent">
-                                                <!-- Phase 1 -->
-                                                <div
-                                                        class="tab-pane fade show active"
-                                                        id="phase1"
-                                                        role="tabpanel"
-                                                        aria-labelledby="phase1-tab">
-                                                    <div class="row">
-                                                        <div
-                                                                class="col-12 col-md-12">
-                                                            <img
-                                                                    src="image/2.png"
-                                                                    alt="Phase 1 Image"
-                                                                    class="img-fluid"/>
+                                                <!-- Tab Content -->
+                                                <div class="tab-content mt-3" id="customPhaseTabContent">
+                                                    <!-- Phase 1 -->
+                                                    <div class="tab-pane fade show active" id="customPhase1" role="tabpanel" aria-labelledby="customPhase1-tab">
+                                                        <div class="row">
+                                                            <div class="col-12 col-md-12">
+                                                                <img src="image/2.png" alt="Phase 1 Image" class="img-fluid"/>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <!-- Phase 2 -->
-                                                <div
-                                                        class="tab-pane fade"
-                                                        id="phase2"
-                                                        role="tabpanel"
-                                                        aria-labelledby="phase2-tab">
-                                                    <div class="row">
-                                                        <div
-                                                                class="col-12 col-md-12">
-                                                            <img
-                                                                    src="image/3.png"
-                                                                    alt="Phase 2 Image"
-                                                                    class="img-fluid"/>
+                                                    <!-- Phase 2 -->
+                                                    <div class="tab-pane fade" id="customPhase2" role="tabpanel" aria-labelledby="customPhase2-tab">
+                                                        <div class="row">
+                                                            <div class="col-12 col-md-12">
+                                                                <img src="image/3.png" alt="Phase 2 Image" class="img-fluid"/>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <!-- Phase 3 -->
-                                                <div
-                                                        class="tab-pane fade"
-                                                        id="phase3"
-                                                        role="tabpanel"
-                                                        aria-labelledby="phase3-tab">
-                                                    <div class="row">
-                                                        <div
-                                                                class="col-12 col-md-12">
-                                                            <img
-                                                                    src="image/4.png"
-                                                                    alt="Phase 3 Image"
-                                                                    class="img-fluid"/>
+                                                    <!-- Phase 3 -->
+                                                    <div class="tab-pane fade" id="customPhase3" role="tabpanel" aria-labelledby="customPhase3-tab">
+                                                        <div class="row">
+                                                            <div class="col-12 col-md-12">
+                                                                <img src="image/4.png" alt="Phase 3 Image" class="img-fluid"/>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -887,7 +909,7 @@ session_start();
                                         <hr/>
 
                                         <p class="pclass">
-                                            Application Deadline: 26th November,
+                                            Application Deadline: 7th December,
                                             2024
                                         </p>
 
