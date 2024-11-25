@@ -298,4 +298,9 @@ input[type="number"]::-webkit-outer-spin-button {
     .form {
         margin-top: 30px;
     }
+
+    .mobile_responsive {
+        display: inline-block;
+        width: 100%;
+    }
 }
