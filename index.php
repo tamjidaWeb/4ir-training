@@ -270,13 +270,33 @@ session_start();
                         </p>
 
                         <ul class="custom-list">
-                            <li class="pclass">Dhaka</li>
-                            <li class="pclass">Chattogram</li>
-                            <li class="pclass">Khulna</li>
-                            <li class="pclass">Rajshahi</li>
-                            <li class="pclass">Sylhet</li>
-                            <li class="pclass">Mymensingh</li>
-                            <li class="pclass">Barisal</li>
+                            <li class="pclass">
+                                Dhaka (
+                                <a
+                                        target="_blank"
+                                        href="https://www.google.com/maps/dir//Level+9,+F+Haque+Tower,+107+Sonargaon+Road,+Dhaka+1205/@23.7479365,90.3102035,30331m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x3755b8bd757aaaab:0x8dab0992a43b1efc!2m2!1d90.3926051!2d23.7479583?entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D">
+                                    Level 9, F Haque Tower, 107
+                                    Sonargaon Road, Dhaka 1205
+                                </a>
+                                )
+                            </li>
+                            <li class="pclass">
+                                Chattogram (Training Venue would
+                                be Inside Main Town of
+                                Chattogram)
+                            </li>
+                            <li class="pclass">
+                                Khulna (Training Venue would be
+                                Inside Main Town of Khulna)
+                            </li>
+                            <li class="pclass">
+                                Rajshahi (Training Venue would
+                                be Inside Main Town of Rajshahi)
+                            </li>
+                            <li class="pclass">
+                                Sylhet (Training Venue would be
+                                Inside Main Town of Sylhet)
+                            </li>
                         </ul>
 
                         <p id="italic">
